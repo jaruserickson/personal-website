@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.name {
+    font-weight: lighter;
+    font-size: 3em;
+    color: white;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
