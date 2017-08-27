@@ -1,5 +1,6 @@
 // @flow
 import React, { Component } from 'react'
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Video from './Video'
 import Social from './Social'
 
@@ -31,6 +32,7 @@ export default class Header extends Component {
         return (
             <div className={'container'}>
                 <Video { ...videoOptions } />
+                
                 <div className={'textcontainer'}>
                     <p className={'name'}>{name}</p>
                     <p className={'title'}>{title}</p>

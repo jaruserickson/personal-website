@@ -31,3 +31,18 @@
     padding: 0;
     margin: 0;
 }
+
+.slide-enter {
+  transform: translate(0%);
+}
+.slide-enter.slide-enter-active {
+  transform: translate(0%);
+  transition: transform 1000ms ease-in-out;
+}
+.slide-leave {
+  transform: translate(0%);
+}
+.slide-leave.slide-leave-active {
+  transform: translate(0%);
+  transition: transform 1000ms ease-in-out;
+}

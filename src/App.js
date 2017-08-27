@@ -2,6 +2,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import Header from './components/Header'
+import Section from './components/Section'
 
 class App extends Component {
     render() {
@@ -18,6 +19,18 @@ class App extends Component {
                     linkedin: 'jaruserickson',
                     lastfm: 'jarus_e'
                   }}
+                />
+                <Section
+                    title={'education'}
+                    subtitle={'University of Toronto'}
+                    time={'September 2015 - May 2020'}
+                    content={'content'}
+                />
+                <Section
+                    title={'work experience'}
+                    subtitle={'KOMBINE AI'}
+                    time={'May 2017 - August 2017'}
+                    content={'content'}
                 />
             </div>
         )
