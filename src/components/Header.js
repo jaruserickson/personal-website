@@ -1,13 +1,17 @@
 // @flow
 import React, { Component } from 'react'
 import Video from './Video'
+import Social from './Social'
 
 import './css/Header.css'
 
 export default class Header extends Component {
     render() {
         const {
-            name
+            name,
+            title,
+            videoUri,
+            social
         } = this.props
 
         const videoOptions = {
@@ -19,7 +23,7 @@ export default class Header extends Component {
             loadingSpinner: false,
             preload: 'auto',
             sources: [{
-                src: 'https://s3.amazonaws.com/jaruserickson/broll.mp4',
+                src: videoUri,
                 type: 'video/mp4'
             }]
         }
@@ -27,7 +31,11 @@ export default class Header extends Component {
         return (
             <div className={'container'}>
                 <Video { ...videoOptions } />
-                <p className={'name'}>{name}</p>
+                <div className={'textcontainer'}>
+                    <p className={'name'}>{name}</p>
+                    <p className={'title'}>{title}</p>
+                    <Social {...social} />
+                </div>
             </div>
         )
     }

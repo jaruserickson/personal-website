@@ -9,6 +9,15 @@ class App extends Component {
             <div className={'App'}>
                 <Header 
                   name={'jacob erickson'}
+                  title={'software engineer'}
+                  videoUri={'https://s3.amazonaws.com/jaruserickson/broll.mp4'}
+                  social={{
+                    github: 'jaruserickson',
+                    instagram: 'jaruserickson',
+                    resume: 'path-to-resume',
+                    linkedin: 'jaruserickson',
+                    lastfm: 'jarus_e'
+                  }}
                 />
             </div>
         )

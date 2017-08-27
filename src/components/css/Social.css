@@ -1,0 +1,8 @@
+.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-flex; 
+    display: flex;
+    flex-direction: row;
+}
