@@ -1,9 +1,10 @@
 import React from 'react'
 import './css/Section.css'
+
 export default ({title, subtitle, time, content}) => (
     <div className={'thiscontainer'}>
         <div className={'titleContainer'}>
-            <p className={'title'}>{title}</p>
+            <p className={'maintitle'}>{title}</p>
             <div className={'containerHell'}>
                 <p className={'subtitle'}>{subtitle}</p>
                 <p className={'time'}>{time}</p>
