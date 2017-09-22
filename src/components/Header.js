@@ -42,11 +42,9 @@ export default class Header extends Component {
         let thisHeight = 720
         if (!( width <= 1280 && height <= 720)){
             if (width > 1280 && height < 1280) {
-                console.log('fluid')
                 thisWidth = width
                 thisHeight = Math.ceil((8 * width) / 9)
             } else {
-                console.log('anti-fluid')
                 thisWidth = Math.ceil((16 * height) / 9)
                 thisHeight = height
             }
