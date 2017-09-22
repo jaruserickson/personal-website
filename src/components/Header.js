@@ -71,6 +71,7 @@ export default class Header extends Component {
                 <div style={{width: thisWidth, height: thisHeight, position: 'absolute', top: 0}}>
                     <Video { ...videoOptions }/>
                 </div>
+                <div style={{position: 'absolute', zIndex: 1, top: 0, width: thisWidth, height: thisHeight}}/>
                 <div className={'textcontainer'}>
                     <p className={'name'}>{name}</p>
                     <p className={'title'}>{title}</p>
