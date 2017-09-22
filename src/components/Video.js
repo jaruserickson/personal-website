@@ -15,7 +15,7 @@ export default class VideoPlayer extends Component {
                 this.setState({visible: false})
             })
     }
-    
+
     componentWillReceiveProps(nextProps) {
         this.player = videojs(this.videoNode, nextProps, () => {})
     }

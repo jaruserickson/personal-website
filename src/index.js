@@ -11,7 +11,7 @@ ReactDOM.render(<Header
                     social={{
                         github: 'jaruserickson',
                         instagram: 'jaruserickson',
-                        resume: 'resume.pdf',
+                        resume: 'https://s3.amazonaws.com/jaruserickson/resume.pdf',
                         linkedin: 'jaruserickson',
                         lastfm: 'jarus_e'
                     }}
