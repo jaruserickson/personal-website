@@ -11,7 +11,7 @@ import {
 import './css/Social.css'
 
 export default ({github, instagram, linkedin, resume, lastfm}) => (
-    <div className={'container'}>
+    <div className={'soccontainer'}>
         <p>
         {
             github && (

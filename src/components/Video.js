@@ -15,6 +15,10 @@ export default class VideoPlayer extends Component {
                 this.setState({visible: false})
             })
     }
+    
+    componentWillReceiveProps(nextProps) {
+        this.player = videojs(this.videoNode, nextProps, () => {})
+    }
 
     componentWillUnmount() {
         if (this.player) {
@@ -31,7 +35,7 @@ export default class VideoPlayer extends Component {
                     transitionEnterTimeout={500}
                     transitionLeaveTimeout={300}
                 >
-                    { this.state.visible && <img src={require('./overlay.png')} className="overlay"/> }
+                    { this.state.visible && <div className="overlay"/> }
                 </ReactCSSTransitionGroup>
             </div>
         )
