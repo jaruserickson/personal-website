@@ -12,7 +12,7 @@ export default class VideoPlayer extends Component {
     componentDidMount() {
         this.player = videojs(this.videoNode, this.props, () => {})
             .ready(() => {
-                this.setState({visible: false})
+                setTimeout(() => this.setState({visible: false}), 1000)
             })
     }
 
