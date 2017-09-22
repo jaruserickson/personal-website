@@ -41,7 +41,7 @@ export default class Header extends Component {
         let thisWidth = 1280
         let thisHeight = 720
         if (!( width <= 1280 && height <= 720)){
-            if (width > 1280 && height < 804) {
+            if (width > 1280 && height < 1280) {
                 console.log('fluid')
                 thisWidth = width
                 thisHeight = Math.ceil((8 * width) / 9)
@@ -72,7 +72,6 @@ export default class Header extends Component {
                     <Video { ...videoOptions }/>
                 </div>
                 <div className={'textcontainer'}>
-                    <p className={'name'}>{thisWidth}/{thisHeight} {this.state.width}/{this.state.height}</p>
                     <p className={'name'}>{name}</p>
                     <p className={'title'}>{title}</p>
                     <Social {...social} />
