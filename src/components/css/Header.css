@@ -22,6 +22,7 @@
     position: fixed;
     height: 110%;
     width: 110%;
+    top: -20px;
     background-image: url('https://storage.googleapis.com/staging.tailor-1d71a.appspot.com/out4.gif');
     background-position: center;
     background-size: 100% 100%;
