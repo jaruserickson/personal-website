@@ -35,7 +35,7 @@ export default class Header extends Component {
 
         return (
             <div className={'container'}>
-                <div className={'page-bg'}/>
+                <div className={'bg'}/>
                 <div className={'textcontainer'}>
                     <p className={'name'}>{name}</p>
                     <p className={'title'}>{title}</p>
