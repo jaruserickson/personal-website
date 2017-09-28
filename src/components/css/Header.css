@@ -16,6 +16,32 @@
     overflow:hidden;
 }
 
+.page-bg {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('https://storage.googleapis.com/staging.tailor-1d71a.appspot.com/out1.gif');
+    background-size: 100% 100%;
+    background-size: cover;
+
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 .textcontainer {
     font-family: 'Reenie Beanie', sans-serif;
     z-index: 10;
