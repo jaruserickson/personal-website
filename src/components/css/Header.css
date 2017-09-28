@@ -14,6 +14,7 @@
     flex-direction: column;
     text-align: center;
     overflow:hidden;
+    background-color: black;
 }
 
 .page-bg {
@@ -24,6 +25,7 @@
     height: 100%;
     width: 100%;
     background-image: url('https://storage.googleapis.com/staging.tailor-1d71a.appspot.com/out1.gif');
+    background-position: center;
     background-size: 100% 100%;
     background-size: cover;
 
