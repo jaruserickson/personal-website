@@ -6,25 +6,6 @@ import Social from './Social'
 import './css/Header.css'
 
 export default class Header extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { width: '0', height: '0' };
-        this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-    }
-
-    componentDidMount() {
-        this.updateWindowDimensions();
-        window.addEventListener('resize', this.updateWindowDimensions);
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener('resize', this.updateWindowDimensions);
-    }
-
-    updateWindowDimensions() {
-        this.setState({ width: window.innerWidth, height: window.innerHeight });
-    }
-
     render() {
         const {
             name,
@@ -48,6 +29,24 @@ export default class Header extends Component {
 }
 
 //all this code is for the old videojs background
+        //     constructor(props) {
+        //         super(props);
+        //         this.state = { width: '0', height: '0' };
+        //         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+        //     }
+
+        //     componentDidMount() {
+        //         this.updateWindowDimensions();
+        //         window.addEventListener('resize', this.updateWindowDimensions);
+        //     }
+
+        //     componentWillUnmount() {
+        //         window.removeEventListener('resize', this.updateWindowDimensions);
+        //     }
+
+        //     updateWindowDimensions() {
+        //         this.setState({ width: window.innerWidth, height: window.innerHeight });
+        //     }
         // const {
         //     width,
         //     height
